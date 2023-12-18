@@ -3,9 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>Page Title</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-   
+    <div class="container">
+      <h1 class="title">Rock Paper Scissors</h1>
+
+      <div class="botones">
+        <button class="botonRoca" value="rock">Rock</button>
+        <button class="botonPapel" value="paper">Paper</button>
+        <button class="botonTijeras" value="scissors">Scissors</button>
+      </div>
+
+      <div class="resultados">
+        <table>
+          <tr>
+            <th class="resultsTitle">Player score:</th>
+            <th class="resultsTitle">Computer score:</th>
+          </tr>
+          <tr>
+            <td><div class="playerScore">0</div></td>
+            <td><div class="computerScore">0</div></td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="resultsTitle">Results</p>
+      <div id="result"></div>
+
+      <div class="playAgain">Restart game</button>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
